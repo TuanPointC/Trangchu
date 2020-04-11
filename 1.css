@@ -1,3 +1,103 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .head{
+    margin: auto;
+    margin-top: -40px;
     text-align: center;
+    height: 90px;
+    border-bottom: 1px solid rgb(192, 181, 181);
+}
+h1{
+    font-family: 'Londrina Sketch',cursive;
+    font-size: 70px;
+}
+.right{
+    width: 300px;
+    float: left;
+    position: fixed;
+    height:700px;
+    background-image: linear-gradient(rgb(167, 27, 167), rgb(207, 114, 130),rgb(224, 37, 37));
+    position: relative;
+    text-align: center;
+    display: none;
+}
+.right .anh img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    right: 28%;
+    top:20px;
+}
+
+.right .chu1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 152px;
+}
+.bar{
+    float: left;
+    font-size: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.right a{
+    font-size: 19px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+}
+.right a:hover{
+    color:rgb(245, 234, 234)
+}
+.right .js{
+    margin-top: 70px;
+    text-align: left;
+    margin-left: 20px;
+}
+.right .taga{
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 20px;
+}
+.noidung{
+    width: 100%;
+    float: left;
+    margin: auto;
+}
+.noidung .container{
+    width: 500px;
+    margin: auto;
+}
+.noidung .anh{
+    width: 481px;
+    padding-top: 30px;
+    margin: auto;
+}
+.noidung .chu{
+    width: 481px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+@media screen and (max-width:576px){
+    .noidung img{
+        width:450px;
+        margin-left: 10px;
+    }
+    .head h1{
+        margin-left: 102px;
+    }
+    .noidung chu{
+        width:450px;
+        margin-left: 57px;
+    }
+    .right{
+        position: absolute;
+        top: 36px;
+        left: 106px;
+        float: none;
+    }
 }

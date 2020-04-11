@@ -51,6 +51,7 @@ h1{
 .right a:hover{
     color:rgb(245, 234, 234)
 }
+.right .chu1 a{color:white;}
 .right .js{
     margin-top: 70px;
     text-align: left;
@@ -83,21 +84,7 @@ h1{
     margin: auto;
 }
 @media screen and (max-width:576px){
-    .noidung img{
-        width:450px;
-        margin-left: 10px;
-    }
-    .head h1{
-        margin-left: 102px;
-    }
-    .noidung chu{
-        width:450px;
-        margin-left: 57px;
-    }
-    .right{
-        position: absolute;
-        top: 36px;
-        left: 106px;
-        float: none;
+    body{
+        display: none;
     }
 }

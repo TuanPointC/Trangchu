@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TuanPointC</title>
     <link rel="stylesheet" href="1.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
-        <div id="nut"class="nut" ><div onclick="bar()"class="fa fa-bars"></div></div>
+        <div id="nut"class="nut"onclick="bar()">☰</div>
+
         <div class="menu"id="menu">
             <ul>
                 <li><a href="">Machine Leaning</a></li>
                 <li><a href="">Javascript</a></li>
-                <li><a href="">STM</a></li>
+                <li onclick="stm()"><a class="tag_stm" href="#">STM</a></li>
             </ul>
         </div>
 
         <div class="logo">
             <img src="anh/tuan.jpg" alt="">
             <div class="chu">TuanPointC</div>
+        </div>
+    </div>
+
+    <div id="stm"class="stm">
+        <div class="content_stm">
+            <ul>
+                <li><a target="_blank" href="https://tuanpointc.github.io/stm32f4/">Cài đặt môi trường</a></li>
+                <li><a href="">Giới thiệu về các phần mền và vi điều khiển STM32</a></li>
+                <li><a href="">Nhấp nháy led trong vi điều khiển</a></li>
+                <li><a href="">Nhấp nháy nhiều led với nhiều chế độ</a></li>
+            </ul>
         </div>
     </div>
     <script src="1.js"></script>

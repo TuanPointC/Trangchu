@@ -1,90 +1,129 @@
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color:  rgb(230, 218, 221);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.head{
-    margin: auto;
-    margin-top: -40px;
-    text-align: center;
-    height: 90px;
-    border-bottom: 1px solid rgb(192, 181, 181);
+.menu{
+text-align: center;  
+background-image: linear-gradient(to right, rgba(255, 0, 0, 0.247), rgb(245, 85, 85));
+width: 700px;
+padding: 1px;
 }
-h1{
-    font-family: 'Londrina Sketch',cursive;
-    font-size: 70px;
+.menu  a{
+    padding: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: 0.4s;
 }
-.right{
-    width: 300px;
-    float: left;
-    position: fixed;
-    height:700px;
-    background-image: linear-gradient(rgb(167, 27, 167), rgb(207, 114, 130),rgb(224, 37, 37));
-    position: relative;
-    text-align: center;
-    display: none;
+.menu li{
+    list-style: none;
 }
-.right .anh img{
-    width: 130px;
-    height: 130px;
+.menu ul{
+    display:flex;
+    padding-left: 0px;
+    justify-content: center;
+}
+.menu a:hover{
+    color: black;
+
+}
+.logo img{
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    position: absolute;
-    right: 28%;
-    top:20px;
+    transition: 1s;
+    border: 2px solid rgb(0, 0, 0);
+}
+.logo img:hover{
+    transform: rotate(360deg);
+}
+.logo .chu{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 30px;
+    animation-name:chu;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: 100;
+}
+.nut{display: none;}
+@media screen and (min-width:1160px){
+        .menu{
+            float: right;
+        }
+        .logo img{
+            float: left;
+        }
+        .logo .chu{
+            float: left;
+        }
+        @keyframes chu{
+            0%{color:black;left: 0px;top:0px;}
+            50%{color:rgb(250, 0, 0);left:23%;top:0px}
+            100%{color:black;left:0px;top:0px}
+        }
 }
 
-.right .chu1{
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 152px;
-}
-.bar{
-    float: left;
-    font-size: 30px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-.right a{
-    font-size: 19px;
-    text-decoration: none;
-    color:rgb(0, 0, 0);
-    font-weight: bold;
-}
-.right a:hover{
-    color:rgb(245, 234, 234)
-}
-.right .chu1 a{color:white;}
-.right .js{
-    margin-top: 70px;
-    text-align: left;
-    margin-left: 20px;
-}
-.right .taga{
-    margin-top: 50px;
-    text-align: left;
-    margin-left: 20px;
-}
-.noidung{
-    width: 100%;
-    float: left;
-    margin: auto;
-}
-.noidung .container{
-    width: 500px;
-    margin: auto;
-}
-.noidung .anh{
-    width: 481px;
-    padding-top: 30px;
-    margin: auto;
-}
-.noidung .chu{
-    width: 481px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin: auto;
-}
-@media screen and (max-width:576px){
-    body{
+@media screen and (max-width:726px) and (min-width:480px){
+    .logo{
         display: none;
     }
+    .menu ul{
+        display: inline;
+    }
+    .menu li{
+        border-bottom:1px solid gray ;
+    }
+    .menu{
+        width: 100%;
+    }
+    .menu a{
+        font-size: 20px;
+    }
+    .menu a:hover{
+        color:black;
+    }
+}
+@media screen  and (max-width:1161px)and (min-width:727px){
+    body{
+        position: relative;
+    }
+    .logo{
+        position: absolute;
+        top:-145px;
+        left: 46%;
+    }
+    .logo .chu{
+        margin-left: -46px;
+    }
+        .menu{
+        margin:auto;
+        margin-top: 150px ;
+    }
+}
+@media screen and (max-width:479px){
+    .nut{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .menu ul{
+        display: inline;
+    }
+    .menu li{
+        border-bottom:1px solid gray ;
+    }
+    .menu{
+        width: 100%;
+    }
+    .menu a{
+        font-size: 20px;
+    }
+    .menu{display: none;}
 }

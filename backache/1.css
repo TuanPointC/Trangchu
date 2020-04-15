@@ -1,0 +1,150 @@
+body{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(56, 53, 53);
+}
+.head{
+    background-color: rgb(9, 59, 92);
+    height: 250px;
+}
+.head h1{
+    width: 900px;
+    text-align: center;
+    margin: auto;
+    color: aliceblue;
+    padding-top: 30px;
+    font-size: 40px;
+}
+.container{
+    color: aliceblue;
+    background-color: rgb(26, 23, 23);
+    width: 1262px;
+    height: 4000px;
+    margin: auto;
+}
+.container h3{
+    font-size: 22px;
+    width: 944px;
+    margin: auto;
+}
+.container .anh{
+    width: 944px;
+    margin: auto;
+}
+.container img{
+    width: 944px;
+    height: 427px;
+}
+.nguyen_nhan .chu{
+    margin: auto;
+    width: 944px;
+    font-size: 22px;
+    padding-top: 40px;
+}
+.tac_hai .chu{
+    margin: auto;
+    width: 944px;
+    font-size: 22px;
+    padding-top: 40px;
+}
+.giai_phap{
+    margin-bottom: -90px;
+}
+.giai_phap .chu{
+    margin: auto;
+    width: 944px;
+    font-size: 22px;
+    padding-top: 40px;
+}
+.gp{
+    margin-top: 122px;
+    width: 944px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gp .gp_con img{
+    width: 314px;
+    height: 283px;
+}
+
+.gp .gp_con{
+    margin-top: -95px;
+    width: 301px;
+    height: 450px;
+}
+.gp .gp_con .chu{
+    margin-top: -44px;
+   text-align: center;
+   width: 100%;
+}
+li{
+    margin-left: 30px;
+}
+.phong_tranh .chu img{
+    width: 204px;
+    height: 167px;
+}
+.phong_tranh .chu{
+    width:944px;
+    margin: auto;
+    height: 400px;
+}
+.phong_tranh .chu li{
+    font-size: 14px;
+}
+.phong_tranh .chu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container h3{
+    margin-left:5px;
+    margin-top:30px ;
+    margin-bottom:30px ;
+}
+span{
+    font-size: 22px;
+}
+.foot{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(9, 59, 92);
+    text-align: center;
+    color: aliceblue;
+    
+}
+.foot h2{
+    padding-top: 20px;
+}
+@media (max-width:1027px){
+
+    .head{
+       background-color: rgba(178, 34, 34, 0);
+    }
+
+    .foot{
+       background-color: rgba(102, 51, 153, 0);
+    }
+    .nguyen_nhan img{
+        display: none;
+    }
+    .tac_hai img{
+        display: none;
+    }
+    .giai_phap .anh{
+        display: none;
+    }
+    .phong_tranh .anh{
+        display: none;
+    }
+    .container{
+        height: 2300px;
+    }
+    .head h1{
+        margin-left: 182px;
+    }
+    .foot h2{
+        width: 704px;
+        margin-left: 278px;
+    }
+}

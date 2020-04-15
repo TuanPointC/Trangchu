@@ -130,14 +130,19 @@ padding: 1px;
 .stm{
     display: none;
 }
-
-.stm li a{
+.blog{
+    display: none;
+}
+.memory{
+    display: none;
+}
+.stm li a,.blog li a,.memory li a{
     text-decoration: none;
     font-size: 20px; 
     font-weight: bold;
 }
 
-.stm li a:hover{
+.stm li a:hover ,.blog li a:hover ,.memory li a:hover{
     font-style: italic;
     color: red;
     
@@ -148,20 +153,35 @@ padding: 1px;
         top:75px;
         right:10px;
          width: 450px;
-    background-color: pink;
+        background-color: pink;
     }
-    .stm li a{
-    text-decoration: none;
-    font-size: 20px; 
-    font-weight: bold;
-}
-.stm li{
-    list-style: none;
-    margin-top: 20px; 
-    margin-left: 10px;
-}
-.stm li{
-    margin-top: 20px; 
-    margin-left: 10px;
-}
+    .stm li a,.blog li a ,.memory li a{
+        text-decoration: none;
+        font-size: 20px; 
+        font-weight: bold;
+    }
+    .stm li, .blog li,.memory li{
+        list-style: none;
+        margin-top: 20px; 
+        margin-left: 10px;
+    }
+    .stm li, .blog li,.memory li{
+        margin-top: 20px; 
+        margin-left: 10px;
+    }
+    .blog{
+        position: absolute;
+        top:75px;
+        right:260px;
+         width: 450px;
+        background-color: pink;
+    }
+    .memory{
+        position: absolute;
+        top:75px;
+        right:150px;
+         width: 450px;
+        background-color: pink;
+    }
+
 }
